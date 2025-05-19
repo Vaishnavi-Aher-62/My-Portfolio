@@ -20,7 +20,7 @@
       <a href="https://in.linkedin.com/in/vaishnavi-aher-33b496341?trk=people-guest_people_search-card" target="_blank">
         <img src="images/linkedin.png" alt="LinkedIn" style="height: 30px;">
       </a>
-      <a href="https://www.behance.net/your-profile" target="_blank">
+      <a href="https://github.com/dashboard" target="_blank">
         <img src="images/social.png" alt="Behance" style="height: 30px;">
       </a>
       <a href="mailto:yourmail@example.com" target="_blank">
@@ -46,6 +46,21 @@
     </p>
   </div>
 </section>
+
+<!-- START: Beliefs Section -->
+  <section class="beliefs-section">
+    <h2 class="beliefs-heading">✨ What I Believe In</h2>
+    <p class="beliefs-text">Curiosity, collaboration, creativity — the values that drive everything I do. 🌈</p>
+
+    <div class="slideshow-container">
+      <img class="slideshow-image active" src="images/Albert Einstein Quotes On Education.jpeg" alt="Belief Image 1">
+      <img class="slideshow-image" src="images/do you know about this.jpeg" alt="Belief Image 2">
+      <img class="slideshow-image" src="images/download (2).jpeg" alt="Belief Image 3">
+      <img class="slideshow-image" src="images/download (3).jpeg" alt="Belief Image 4">
+    </div>
+  </section>
+  <!-- END: Beliefs Section -->
+
   <div class="menu-overlay" id="menuOverlay">
     <div class="menu-header">
       <span class="close-btn">Close</span>
@@ -56,7 +71,8 @@
       <li><a href="academics.html">Academics</a></li>
       <li><a href="project.html">Projects</a></li>
       <li><a href="skill.html">Skills</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li><a href="certificates.html">Certificates</a></li>
+      <li><a href="contact.html">Contact</a></li>s
     </ul>
   </div>
 
@@ -65,5 +81,31 @@
   </footer>
 
   <script src="script.js"></script> 
+  <script>
+  const slides = document.querySelectorAll('.slideshow-image');
+  let currentIndex = 0;
+  let prevIndex = slides.length - 1;
+
+  function showSlide(index) {
+    slides[prevIndex].classList.remove('active');
+    slides[prevIndex].classList.remove('previous');
+
+    slides[currentIndex].classList.remove('active');
+    slides[currentIndex].classList.add('previous');
+
+    currentIndex = index;
+    slides[currentIndex].classList.remove('previous');
+    slides[currentIndex].classList.add('active');
+
+    prevIndex = (currentIndex - 1 + slides.length) % slides.length;
+  }
+
+  setInterval(() => {
+    const nextIndex = (currentIndex + 1) % slides.length;
+    showSlide(nextIndex);
+  }, 3000);
+</script>
+
+
 </body>
 </html>

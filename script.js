@@ -37,3 +37,40 @@ document.querySelectorAll('.timeline-item').forEach((item, index) => {
     item.style.transform = 'scale(1)';
   });
 });
+
+// Lightbox Effect for Certificates
+document.querySelectorAll('.lightbox').forEach(item => {
+  item.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    const overlay = document.createElement('div');
+    overlay.classList.add('lightbox-overlay');
+
+    const img = document.createElement('img');
+    img.src = this.href;
+    img.alt = this.querySelector('img').alt;
+
+    overlay.appendChild(img);
+    document.body.appendChild(overlay);
+
+    overlay.addEventListener('click', function () {
+      overlay.remove();
+    });
+  });
+});
+
+// Animate certificates on scroll
+function animateCertificates() {
+  const certs = document.querySelectorAll('.gallery a');
+
+  certs.forEach(cert => {
+    const rect = cert.getBoundingClientRect();
+    if (rect.top < window.innerHeight - 100) {  // Trigger animation when almost visible
+      cert.classList.add('animate');
+    }
+  });
+}
+
+window.addEventListener('scroll', animateCertificates);
+window.addEventListener('load', animateCertificates);
+
