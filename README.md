@@ -1,4 +1,4 @@
-🌐 Personal Portfolio Website
+## 🌐 Personal Portfolio Website
 
 This is my personal portfolio website where I showcase my projects, skills, and achievements.  
 
@@ -11,7 +11,6 @@ This is my personal portfolio website where I showcase my projects, skills, and 
 
 ## 🔗 Live Demo
 [Click here to view](https://vaishnavi-aher-62.github.io/My-Portfolio/) 
-*(Replace with your actual hosted link – Netlify, GitHub Pages, Vercel, etc.)*
 
 ## ⚡ Features
 - About Me section  
