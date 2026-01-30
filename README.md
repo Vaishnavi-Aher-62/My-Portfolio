@@ -1,19 +1,31 @@
 ## 🌐 Personal Portfolio Website
 
-This is my personal portfolio website where I showcase my projects, skills, and achievements.  
+A responsive personal portfolio website built to showcase my projects, skills, and experience.
 
-🚀 Tech Stack
-- Frontend : HTML, CSS, JavaScript 
-- Libraries: Google Fonts (Poppins, Montserrat, Lora)
+## Tech Stack
+- HTML
+- CSS
+- JavaScript
+- Google Fonts (Poppins, Montserrat, Lora)
 
-## 📸 Preview
-![Portfolio Screenshot]("C:\Users\Vaishnavi\OneDrive\Desktop\Clg\portfolio ss.png")  
+
+##  Preview
+![Portfolio Screenshot](image.png)
+
 
 ## 🔗 Live Demo
 [Click here to view](https://vaishnavi-aher-62.github.io/My-Portfolio/) 
 
-## ⚡ Features
-- About Me section  
-- Projects showcase  
-- Contact details / social links  
+## Features
+- Responsive design
+- Project showcase
+- About me section
+- Contact & social links
+
+## Project Structure
+- index.html
+- css/
+- js/
+- assets/
+
 
